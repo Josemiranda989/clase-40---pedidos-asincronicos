@@ -23,9 +23,8 @@ window.onload = () => {
       const filterMovies = movies.filter((movie) => {
         return favoritas.includes(String(movie.id));
       });
-
-      console.log(filterMovies);
-      // iteamos ese nuevo array con su respectiva tarjeta
+      // console.log(filterMovies);
+      // iteramos ese nuevo array con su respectiva tarjeta
       filterMovies.forEach((movie) => {
         const card = document.createElement("div");
         card.setAttribute("class", "card");

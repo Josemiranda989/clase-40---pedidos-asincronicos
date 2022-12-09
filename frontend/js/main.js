@@ -7,12 +7,13 @@ function agregarFavorito(id) {
     let arr = datos.split(",");
     arr.push(id);
     localStorage.setItem("datos", arr);
-    console.log(localStorage.getItem("datos"));
+    Swal.fire("Excelente!", "Se agregó al listado una nueva pelicula!", "success");
   } else {
     // Si no contiene nada en localStorage seteamos la nueva película
     localStorage.setItem("datos", id);
-    console.log(localStorage.getItem("datos"));
+    Swal.fire("Excelente!", "Tenes una pelicula en favoritos!", "success");
   }
+  
 }
 
 window.onload = () => {
