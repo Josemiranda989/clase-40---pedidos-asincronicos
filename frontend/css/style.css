@@ -109,6 +109,20 @@ input, select{
 	color: #888;
 }
 
+.link {
+  display:flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 5%;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-decoration:none;
+}
+
 .ec-stars-wrapper:hover a {
 	color: rgb(39, 130, 228);
 }
